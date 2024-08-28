@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+    <title>main-assignment</title>
+    <script type="module" crossorigin src="/2024-hexschool-design-week5/assets/bootstrap.min-766c45b7.js"></script>
+    <link rel="stylesheet" href="/2024-hexschool-design-week5/assets/bootstrap-5d1fe6e1.css">
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <nav class="navbar navbar-expand bg-body-tertiary bg-light py-2r vh-100">
+  <div class="h-100 d-flex flex-column align-items-start">
+    <a class="navbar-brand py-0 mb-2r ps-2r" href="index.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg"
+        alt=""
+        class="navbar-brand"
+      />
+    </a>
+    <div class="align-items-start" id="navbarNavAltMarkup">
+      <ul class="navbar-nav d-flex flex-column">
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r "
+            href="#"
+          >
+            <span class="material-icons me-3"> assessment </span>
+            <p class="text-grey-900 fw-bold mb-0">Dashboard</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r "
+            href="#"
+          >
+            <span class="material-icons me-3"> question_answer </span>
+            <p class="text-grey-900 fw-bold mb-0">Question</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r active"
+            href="index.html"
+          >
+            <span class="material-icons me-3"> assignment </span>
+            <p class="text-grey-900 fw-bold mb-0">Assignment</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r "
+            href="#"
+          >
+            <span class="material-icons me-3"> video_library </span>
+            <p class="text-grey-900 fw-bold mb-0">Course</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r "
+            href="admin.html"
+          >
+            <span class="material-icons me-3"> people </span>
+            <p class="text-grey-900 fw-bold mb-0">Admin</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r "
+            href="#"
+          >
+            <span class="material-icons me-3"> settings </span>
+            <p class="text-grey-900 fw-bold mb-0">Settings</p></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="ps-2r d-flex mt-auto align-items-center me-5r">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+        alt=""
+        class="rounded-circle avatar me-3"
+      />
+      <div>
+        <p class="text-grey-900 fw-bold m-0">Andy Chen</p>
+        <div class="text-grey-600">andy0401@mail.com</div>
+      </div>
+    </div>
+  </div>
+</nav>
+      <div class="p-2r w-100">
+        <div class="d-flex align-items-center mb-2_75r">
+          <h2 class="fw-bold fs-4 me-5 mb-0">Assignment</h2>
+          <a
+            type="button"
+            class="btn d-flex btn-outline-success border-0"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="fw-bold text-black">All Courses</span>
+            <span class="material-icons ms-2"> expand_more </span>
+          </a>
+          <a href="#" class="d-block text-black ms-auto"
+            ><span class="material-icons"> search </span></a
+          >
+          <a href="#" class="d-block text-black ms-1_5r"
+            ><span class="material-icons"> notifications_active </span></a
+          >
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Course A</a></li>
+            <li><a class="dropdown-item" href="#">Course B</a></li>
+            <li><a class="dropdown-item" href="#">Course C</a></li>
+            <li><a class="dropdown-item" href="#">Course D</a></li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <div class="assignment me-3 d-flex flex-column align-items-start">
+            <a
+              type="button"
+              class="btn d-flex btn-outline-success border-0 mb-1 p-0"
+              data-bs-toggle="collapse"
+              href="#collapse-list"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapse-list"
+            >
+              <span class="fw-bold text-black">All (4)</span>
+              <span class="material-icons ms-2"> expand_more </span>
+            </a>
+            <div class="list-group collapse w-100" id="collapse-list">
+              <a
+                href="#"
+                class="list-group-item border rounded-0 list-group-item-action active"
+                aria-current="true"
+              >
+                <div class="d-flex mb-1">
+                  <p class="m-0 fs-0_75r">Chapter Assignment 2</p>
+                  <p class="ms-auto m-0 fs-0_75r">4 hrs ago</p>
+                </div>
+                <div class="d-flex">
+                  <p class="m-0 fw-bold">Please check this file…</p>
+                  <p class="ms-auto m-0 fs-0_75r text-grey-600">Emily Wang</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="list-group-item border rounded-0 list-group-item-action"
+              >
+                <div class="d-flex mb-1">
+                  <p class="m-0 fs-0_75r">Chapter Assignment 1</p>
+                  <p class="ms-auto m-0 fs-0_75r">12 hrs ago</p>
+                </div>
+                <div class="d-flex">
+                  <p class="m-0 fw-bold">My Homework</p>
+                  <p class="ms-auto m-0 fs-0_75r text-grey-600">David Xu</p>
+                </div></a
+              >
+              <a
+                href="#"
+                class="list-group-item border rounded-0 list-group-item-action"
+              >
+                <div class="d-flex mb-1">
+                  <p class="m-0 fs-0_75r">Final Assignment</p>
+                  <p class="ms-auto m-0 fs-0_75r">18 hrs ago</p>
+                </div>
+                <div class="d-flex">
+                  <p class="m-0 fw-bold">Have a problem with this…</p>
+                  <p class="ms-auto m-0 fs-0_75r text-grey-600">Tony Wei</p>
+                </div></a
+              >
+              <a
+                href="#"
+                class="list-group-item border rounded-0 list-group-item-action"
+              >
+                <div class="d-flex mb-1">
+                  <p class="m-0 fs-0_75r">Final Assignment</p>
+                  <p class="ms-auto m-0 fs-0_75r">19 hrs ago</p>
+                </div>
+                <div class="d-flex">
+                  <p class="m-0 fw-bold">Did I do it right?</p>
+                  <p class="ms-auto m-0 fs-0_75r text-grey-600">
+                    Christina Lin
+                  </p>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="d-flex flex-column">
+            <p class="m-0 fs-0_75r text-grey-600 ms-auto mb-2">2 comments</p>
+            <div class="card border-2">
+              <div class="card-header d-flex align-items-center">
+                <div>
+                  <small class="fs-0_75r"
+                    >Chapter Assignment 2 / HTML&CSS</small
+                  >
+                  <h2 class="fw-bold fs-6">
+                    Please check this file for me, thanks!
+                  </h2>
+                </div>
+                <span class="material-symbols-outlined ms-auto">
+                  more_vert
+                </span>
+              </div>
+              <div class="card-body d-flex bg-white">
+                <div class="me-2">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emilywang.jpeg"
+                    alt=""
+                    class="rounded-circle avatar"
+                  />
+                </div>
+
+                <div class="border-bottom pb-3">
+                  <div class="card-title">
+                    <h3 class="mb-1 fs-6">Emily Wang</h3>
+                    <p class="fs-0_75r mb-0">10:38 AM (4 hours ago)</p>
+                  </div>
+                  <p class="card-text">
+                    Hi Teacher, the attached file is my homework of chapter 2.
+                    And here comes a question: Why in the following code the
+                    height of the <span class="text-success">div</span> is
+                    bigger than the height of the
+                    <span class="text-success">img</span> ? There is a gap below
+                    the image, but it doesn’t seems to be a padding/margin.
+                    <br />What is the gap or extra space below image?
+                  </p>
+
+                  <button
+                    class="btn d-flex btn-light border rounded-2"
+                    type="button"
+                  >
+                    <span class="material-icons me-2"> attach_file </span>
+                    <p class="mb-0 fw-bold">HW-2-David.zip</p>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body d-flex bg-white pt-0">
+                <div class="me-2">
+                  <img
+                    src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+                    alt=""
+                    class="rounded-circle avatar"
+                  />
+                </div>
+
+                <div>
+                  <div class="card-title d-flex">
+                    <div>
+                      <h3 class="mb-1 fs-6">Andy Chen (You)</h3>
+                      <p class="fs-0_75r mb-0">13:24 AM (1 hours ago)</p>
+                    </div>
+                    <span
+                      class="material-icons ms-auto me-4 align-items-center"
+                    >
+                      star_border
+                    </span>
+
+                    <span class="material-icons"> edit </span>
+                  </div>
+                  <p class="card-text">
+                    Hi David, by default, an image is rendered inline, like a
+                    letter so it sits on the same line that a, b, c and d sit
+                    on. There is space below that line for the descenders you
+                    find on letters like g, j, p and q.<br /><br />
+                    You can: <br /><br />
+                    • adjust the
+                    <span class="text-success">vertical-align</span> of the
+                    image to position it elsewhere (e.g. the
+                    <span class="text-success">middle</span> ) or <br />
+                    • change the <span class="text-success">display</span> so it
+                    isn’t inline.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex mt-3 align-items-center position-relative">
+              <button
+                style="height: 24px"
+                type="button"
+                class="btn me-5 p-0 border-0 btn-outline-dark rounded-circle"
+              >
+                <span class="material-icons"> chevron_left </span>
+              </button>
+              <button
+                style="height: 24px"
+                type="button"
+                class="btn rounded-circle border-0 p-0 btn-outline-dark"
+              >
+                <span class="material-icons"> chevron_right </span>
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success fw-bold ms-auto me-3 rounded-2"
+              >
+                Mark as read
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-success fw-bold rounded-2"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Reply
+              </button>
+              <div class="collapse position-absolute bottom-0 w-100 border-2" id="collapseExample">
+  <div class="card ">
+    <div class="card-header d-flex w-100 align-items-center px-4 py-3">
+      <ul class="list-unstyled d-flex mb-0">
+        <li class="me-4">
+          <button  class="fw-bold ps-1 btn p-0 btn-outline-dark border-0"><p class="m-0 d-flex align-items-center">Body Text<span class="ms-2 material-icons align-middle">
+            arrow_drop_down
+          </span></p></button>
+        </li>
+
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              format_bold
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              format_italic
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              format_list_bulleted
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              format_list_numbered
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              photo
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              link
+            </span></button
+          >
+        </li>
+        <li class="me-4">
+          <button class="btn p-0 btn-outline-dark border-0"
+            ><span class="material-icons align-middle">
+              code
+            </span></button
+          >
+        </li>
+      </ul>
+    </div>
+
+    <textarea
+      class="form-control w-100 border-0 textarea px-4"
+      placeholder="Reply an answer…"
+      rows="7"
+    ></textarea>
+
+    <div class="d-flex my-3 pe-4">
+      <button
+        class="btn btn btn-outline-success me-3 ms-auto rounded-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        Cancel
+      </button>
+      <button class="btn btn btn-success rounded-2 ">Reply</button>
+    </div>
+  </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
