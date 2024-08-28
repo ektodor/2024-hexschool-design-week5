@@ -1,0 +1,150 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="editModal"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="editModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header p-2r border-0">
+        <h1 class="modal-title fs-4 fw-bold" id="editModalLabel">Edit Admin</h1>
+
+        <button
+          type="button"
+          class="btn-close me-0"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body pt-0 px-2r">
+        <form>
+          <div class="pb-4 border-bottom">
+            <h2 class="fs-5 fw-bold mb-3">Account</h2>
+            <div class="mb-3">
+              <label for="name" class="form-label mb-0 fs-14px">Name</label>
+              <input
+                type="text "
+                class="form-control border-0 p-3"
+                id="name"
+                value="Emir Wicks"
+                disabled
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label mb-0 fs-14px">Email</label>
+              <input
+                type="email"
+                class="form-control border-0 p-3"
+                id="email"
+                value="emir.wicks@mail.com"
+                aria-describedby="email"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="py-4 border-bottom">
+            <h2 class="fs-5 fw-bold mb-3">Verification</h2>
+            <div class="d-flex">
+              <span class="material-icons text-success"> check_circle </span>
+              <p class="m-0 ms-2 fw-bold">Verified</p>
+              <p class="m-0 ms-auto">2020/4/12</p>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-outline-secondary mt-3 py-3 w-100 disabled rounded-2"
+            >
+              Send Verification Mail
+            </button>
+          </div>
+          <div class="py-4 border-bottom">
+            <h2 class="fs-5 fw-bold mb-3">Access Level</h2>
+            <select
+              class="form-select rounded-2 p-3 border-secondary"
+              aria-label="Default select example"
+            >
+              <option value="Admin" selected>Admin</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="py-4 border-bottom">
+            <h2 class="fs-5 fw-bold mb-3">Custom Access</h2>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value="Lecture"
+                id="Lecture"
+              />
+              <label class="form-check-label" for="Lecture"> Lecture </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value="Coupon"
+                id="Coupon"
+              />
+              <label class="form-check-label" for="Coupon"> Coupon </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value="Message"
+                id="Message"
+              />
+              <label class="form-check-label" for="Message"> Message </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value="Setting"
+                id="Setting"
+              />
+              <label class="form-check-label" for="Setting"> Setting </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value="Task"
+                id="Task"
+              />
+              <label class="form-check-label" for="Task"> Task Menu </label>
+            </div>
+          </div>
+          <div class="py-4">
+            <h2 class="fs-5 fw-bold mb-3">Deactivate Account</h2>
+
+            <p class="text-danger m-0">
+              <span class="material-icons me-2 align-middle"> warning </span
+              >This cannot be undone!
+            </p>
+            <button
+              type="submit"
+              class="btn btn-outline-danger fw-bold mt-3 py-3 w-100 rounded-2"
+            >
+              Deactivate This Account
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer border-0 me-2r pe-0">
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+        <button type="button" class="btn btn-success">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+@import "bootstrap/scss/functions";
+@import "./utils/variables";
+@import "bootstrap";
+@import "./layout/navbar";
+@import "./pages/index.scss";
+.text-grey {
+  &-600 {
+    color: $gray-600;
+  }
+  &-900 {
+    color: $gray-900;
+  }
+}
+.avatar {
+  height: 40px;
+  width: 40px;
+}
+
+.assignment {
+  min-width: 320px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}

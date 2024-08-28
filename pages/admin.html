@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>admin</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/navbar', {page:'admin'}); -%> <%-
+      include('./layout/edit'); -%><%- include('./layout/add'); -%> <%-
+      include('./layout/view'); -%>
+      <div class="p-2r w-100 d-flex flex-column">
+        <div class="d-flex align-items-center mb-2_75r">
+          <h2 class="fw-bold fs-4 me-5 mb-0">Admin</h2>
+          <a
+            type="button"
+            class="btn d-flex btn-outline-success border-0"
+            data-bs-toggle="modal"
+            data-bs-target="#addModal"
+          >
+            <span class="material-icons me-2"> add </span>
+            <span class="fw-bold text-black">Add New Admin</span>
+          </a>
+          <a href="#" class="d-block text-black ms-auto"
+            ><span class="material-icons"> search </span></a
+          >
+          <a href="#" class="d-block text-black ms-1_5r"
+            ><span class="material-icons"> notifications_active </span></a
+          >
+        </div>
+        <table class="table align-middle table-hover">
+          <thead>
+            <tr>
+              <th scope="col">
+                ID
+                <span
+                  class="m-0 fs-6 fw-bold material-icons text-success align-middle"
+                >
+                  arrow_downward
+                </span>
+              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-bs-toggle="modal" data-bs-target="#viewModal">
+              <th scope="row" class="py-3">#1</th>
+              <td>Emir Wicks</td>
+              <td>emir.wicks@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#viewModal"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#editModal"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#2</th>
+              <td>Zaina Goldsmith</td>
+              <td>Emir Wicks</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#3</th>
+              <td>Mahima Lopez</td>
+              <td>mahima.lopez@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#4</th>
+              <td>Pharrell Murray</td>
+              <td>pharrell.murray@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#5</th>
+              <td>Annika Mcbride</td>
+              <td>annika.mcbride@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#6</th>
+              <td>Fatimah Clark</td>
+              <td>fatimah.clark@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#7</th>
+              <td>Klaudia Rhodes</td>
+              <td>klaudia.rhodes@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#8</th>
+              <td>Tillie Lucero</td>
+              <td>tillie.lucero@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#9</th>
+              <td>Sabrina Stephenson</td>
+              <td>sabrina.stephenson@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-3">#10</th>
+              <td>Annie Smith</td>
+              <td>annie.smith@mail.com</td>
+              <td>Yes</td>
+              <td>
+                <div class="d-flex justify-content-end">
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0 me-4"
+                  >
+                    <span class="material-icons align-middle">
+                      visibility
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark border-0 p-0"
+                  >
+                    <span class="material-icons align-middle"> edit </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav
+          class="mt-auto d-flex justify-content-end"
+          aria-label="Page navigation "
+        >
+          <ul class="pagination m-0">
+            <li class="page-item">
+              <a
+                class="page-link p-0 text-success"
+                href="#"
+                aria-label="Previous"
+              >
+                <span
+                  aria-hidden="true"
+                  class="material-icons align-middle p-1 fs-3"
+                >
+                  chevron_left
+                </span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" aria-current="page" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link p-0 text-success" href="#" aria-label="Next">
+                <span
+                  aria-hidden="true"
+                  class="material-icons align-middle p-1 fs-3"
+                >
+                  chevron_right
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
+<!-- <button
+type="button"
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#editModal"
+>
+Launch static backdrop modal
+</button>
+<button
+type="button"
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#addModal"
+>
+Launch static backdrop modal
+</button>
+<button
+type="button"
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#viewModal"
+>
+Launch demo modal
+</button> -->

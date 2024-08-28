@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand bg-body-tertiary bg-light py-2r vh-100">
+  <div class="h-100 d-flex flex-column align-items-start">
+    <a class="navbar-brand py-0 mb-2r ps-2r" href="index.html">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/logo-ANSWER.svg"
+        alt=""
+        class="navbar-brand"
+      />
+    </a>
+    <div class="align-items-start" id="navbarNavAltMarkup">
+      <ul class="navbar-nav d-flex flex-column">
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'Dashboard' ? 'active' : '' %>"
+            href="#"
+          >
+            <span class="material-icons me-3"> assessment </span>
+            <p class="text-grey-900 fw-bold mb-0">Dashboard</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'Question' ? 'active' : '' %>"
+            href="#"
+          >
+            <span class="material-icons me-3"> question_answer </span>
+            <p class="text-grey-900 fw-bold mb-0">Question</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'assignment' ? 'active' : '' %>"
+            href="index.html"
+          >
+            <span class="material-icons me-3"> assignment </span>
+            <p class="text-grey-900 fw-bold mb-0">Assignment</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'Course' ? 'active' : '' %>"
+            href="#"
+          >
+            <span class="material-icons me-3"> video_library </span>
+            <p class="text-grey-900 fw-bold mb-0">Course</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'admin' ? 'active' : '' %>"
+            href="admin.html"
+          >
+            <span class="material-icons me-3"> people </span>
+            <p class="text-grey-900 fw-bold mb-0">Admin</p></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link ps-1_75r d-flex py-0 mb-1_75r <%= page === 'Settings' ? 'active' : '' %>"
+            href="#"
+          >
+            <span class="material-icons me-3"> settings </span>
+            <p class="text-grey-900 fw-bold mb-0">Settings</p></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="ps-2r d-flex mt-auto align-items-center me-5r">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/andychen.jpeg"
+        alt=""
+        class="rounded-circle avatar me-3"
+      />
+      <div>
+        <p class="text-grey-900 fw-bold m-0">Andy Chen</p>
+        <div class="text-grey-600">andy0401@mail.com</div>
+      </div>
+    </div>
+  </div>
+</nav>

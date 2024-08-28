@@ -1,0 +1,67 @@
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="viewModal"
+  tabindex="-1"
+  aria-labelledby="viewModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-2r">
+      <div class="d-flex">
+        <img
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week5/emir.jpeg"
+          alt=""
+          class="object-fit-cover"
+          style="width: 140px"
+        />
+        <div class="w-100 ms-4">
+          <div class="modal-header p-0 border-0 mb-2">
+            <h1 class="modal-title fs-6" id="viewModalLabel">#1</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0 border-0">
+            <h3 class="fs-6 mb-0">Admin</h3>
+            <h2 class="fs-4 fw-bold mb-2">Emir Wicks</h2>
+            <p class="mb-1_25r text-gray-600">emir.wicks@mail.com</p>
+            <div class="d-flex align-items-end">
+              <span class="badge text-bg-light px-2 py-1">Verified</span>
+              <button
+                class="btn p-0 ms-auto"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <span class="material-icons ms-auto text-success align-middle">
+                  expand_less
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="collapseExample"
+        class="modal-footer p-0 border-0 mt-2r collapse"
+      >
+        <button
+          type="button"
+          class="btn btn-outline-danger py-2 px-2r"
+          data-bs-dismiss="modal"
+        >
+          Deactivate
+        </button>
+        <button type="button" class="btn btn-success py-2 px-2r">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
